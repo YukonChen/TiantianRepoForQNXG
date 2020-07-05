@@ -89,7 +89,7 @@
 ![名字](路径)
 ```
 
-![dog](\images\dog.jpg)
+![dog](../images/dog.jpg)
 
 路径也可以是网络图片，前提是你有网
 

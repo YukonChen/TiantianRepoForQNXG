@@ -9,7 +9,7 @@
 ### 2020-07-05
 
 - 掌握常用md语法
-- [Markdown快速入门笔记](/Notes/01_MarkDown 快速入门笔记.md)
+- [Markdown快速入门笔记](../Notes/01_MarkDown 快速入门笔记.md)
 
 ### 2020-07-04
 

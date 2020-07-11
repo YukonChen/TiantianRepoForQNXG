@@ -95,7 +95,7 @@
 - 常见字符集（ASCII，GBK，UTF-8）
 - 万国码——UTF-8 全世界通用
 
-## 5.2. 避免网页乱码
+### 5.2. 避免网页乱码
 
 - `<meta charset = "utf-8">`
 - 网页保存时编码规则要和上面设置内容一致
@@ -104,7 +104,7 @@
 
 ## 6. 网页基本结构
 
-### 6.1. 样例
+### 6.1 样例
 
 ```html
 <!-- 文档声明，声明当前网页的版本是html5 -->
@@ -130,6 +130,61 @@
     </body>
 </html>
 ```
+
+### 6.2 实体
+
+- 在html中有些时候，我们不能直接书写一些特殊符号
+
+- 比如，多个连续的空格，比如字母两侧的大于和小于号
+- 如果我们需要在网页中书写这些特殊的符号，则需要使用html中的实体（转义字符）
+- 实体的名字
+  - 空格`$nbsp;`
+  - 大于号`$gt;`
+  - 小于号`$lt;`
+  - 版权符号`$copy;`
+- 实体有很多，常用的记住，不常用的看文档
+
+
+
+## 7. meta标签
+
+### 7.1. 样例
+
+```html
+    <meta charset="UTF-8">
+    <!--
+        meta主要用于设置网页中的一些元数据，元数据不是给用户看
+            charset 指定网页的字符集
+            name 指定的数据的名称
+            content 指定的数据的内容
+
+                keywords 表示网页的关键字，可以同时指定多个关键字，关键字用,(半角逗号)隔开
+                description 用于指定网站的描述，内容会显示在搜索引擎的结果中
+                title 表示网页的标题，会显示在标题栏，以及搜索结果的超链接上
+                http-equiv="refresh" content="3;url=https://www.baidu.com"
+                将页面重定向到另一个网站
+    -->
+    <meta name="keywords" content="HTML5,前端,CSS3">
+    <meta name="description" content="这是一个非常不错的网站">
+    <meta http-equiv="refresh" content="3;url=https://www.baidu.com">
+```
+
+### 7.2. 描述
+
+- meta主要用于设置网页的元数据，元数据不是给用户看的
+- 常见
+  - charset 指定网页的字符集
+  - name 指定的数据名称
+    - 通常为 name=""
+    - "keywords" 表示网页的关键字，可以同时指定多个关键字，关键字用,(半角逗号)隔开
+    - "description" 用于指定网页的描述，内容会显示在搜索引擎的结果中
+    - "title" 表示网页的标题，会显示在标题栏，以及搜索引擎的超链接上
+  - content 指定的内容
+    - 通常为 content=""
+  - http-equiv
+    - 完整结构`<meta http-equiv="refresh" content="3;url=">`
+    - 可以实现网页多少秒后跳转到另一个网页
+- 更多请看HTML文档
 
 
 

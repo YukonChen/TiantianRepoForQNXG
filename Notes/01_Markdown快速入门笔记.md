@@ -329,3 +329,17 @@ classDiagram
 还有其他不常用的图可以看下面的博客：  
 
 <https://blog.csdn.net/weixin_38008864/article/details/106866122?%3E>
+
+
+
+## 11. 内联LaTeX（高级进阶）
+
+- Typora偏好中启用内联公式
+- 可以输入数学公式
+- 参考下面的文档
+- [https://www.jianshu.com/p/e74eb43960a1]
+
+$\sqrt x$ 举例子，就这样，所有数学公式几乎都能插入
+
+
+

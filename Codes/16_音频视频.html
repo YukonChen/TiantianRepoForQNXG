@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <!--
         audio 标签用来向页面中引入一个外部的音频文件
@@ -18,6 +20,29 @@
             loop 循环播放
             更多属性看文档
     -->
-    <audio src="../source/起飞.mp3" controls autoplay></audio>
+    <!-- <audio src="../source/起飞.mp3" controls autoplay></audio> 
+        这种写法兼容性不好，可以用下面的方法兼容老的浏览器
+    -->
+    <audio controls>
+        <source src="../source/起飞.mp3">
+        <embed src="../source/起飞.mp3" type="audio/mp3" width="300" height="100">
+        <!-- 兼容IE 8 -->
+    </audio>
+
+    <video controls>
+        <source src="../source/老奶奶敢怒不敢言.mp4">
+        <embed src="../source/老奶奶敢怒不敢言.mp4" type="video/mp4" width="500" height="300">
+    </video>
+    <!--
+        但我们一般不把视频音频放到服务器里用相对路径
+        因为这会占用很大的储存空间和网络带宽
+        可以放到其他第三方远程托管降低成本
+    -->
+    <iframe src="//player.bilibili.com/player.html?aid=926289497&bvid=BV1FT4y1E7ZQ&cid=211202768&page=1" scrolling="no"
+        border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="1300" height="800"> </iframe>
+    <!--
+        最后一种插入方式是内联公式的方法
+    -->
 </body>
+
 </html>

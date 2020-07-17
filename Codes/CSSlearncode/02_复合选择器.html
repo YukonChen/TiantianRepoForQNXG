@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 在style标签中的内容都属于CSS语法，最基本的注释都不一样 */
+    /* 这属于内部样式表 */
+    /* 学习测试可以使用，真正开发工作过程中不推荐使用 */
+    p {
+      /*元素选择器*/
+      color: red;
+      font-size: 50px;
+    }
+
+    .yello {
+      /*类选择器*/
+      color: yellow;
+    }
+
+    #blue {
+      /*id选择器*/
+      color: blue;
+    }
+
+    div.yello {
+      /*交集选择器*/
+      color: blueviolet;
+    }
+
+    .a,
+    .b,
+    .c,
+    .d {
+      /*选择器分组，也叫并集选择器*/
+      color: chartreuse;
+    }
+
+
+    .d.e.f.g {
+      color: darkred;
+      font-size: xx-large;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>天天YukonChen</h1>
+  <p>少小离家老大回</p>
+  <p class="yello">乡音无改鬓毛衰</p>
+  <p class="yello">儿童相见不相识</p>
+  <p>笑问客从何处来</p>
+  <p id="blue">落霞与孤鹜齐飞</p>
+  <p>秋水更长天一色</p>
+  <div class="yello">贫穷同乐，富贵无言，乐言对不起包子，乐言没一点良心</div>
+  <div class="a">乐宝啤酒，欢乐开拉</div>
+  <div class="b">乐宝啤酒，欢乐开拉</div>
+  <div class="c">乐宝啤酒，欢乐开拉</div>
+  <div class="d e f g">乐宝啤酒，欢乐开拉</div>
+</body>
+
+</html>

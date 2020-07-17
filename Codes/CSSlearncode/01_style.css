@@ -1,0 +1,12 @@
+p {
+  color: red;
+  font-size: 40px;
+}
+
+.a,
+.b,
+.c,
+.d {
+  /*选择器分组，也叫并集选择器*/
+  color: chartreuse;
+}

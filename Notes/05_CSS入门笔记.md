@@ -124,3 +124,72 @@
 
 
 
+## 8. 关系选择器
+
+```CSS
+  <style>
+    /* 子元素选择器 */
+    div>p {
+      color: blue;
+    }
+
+    div>p>span{
+      color: brown;
+    }
+
+    /* 后代元素选择器 */
+    div span {
+      color: blueviolet;
+    }
+
+    /* 兄弟元素选择器 */
+    p + span{
+      color: chartreuse;
+    }
+    p ~ span{
+      color: darkblue;
+    }
+  </style>
+```
+
+
+
+## 9. 属性选择器
+
+```CSS
+  <style>
+    /* 选择含有指定属性的元素 */
+    h1[title]{
+      color: darkblue;
+    }
+    /* 选择含有指定属性和属性值的元素 */
+    p[title=abc]{
+      color: darkcyan;
+    }
+    /* 选择属性值以指定值开头的元素 */
+    p[title^=abc]{
+      color: darkgoldenrod;
+    }
+    /* 选择属性值以指定值结尾的元素 */
+    p[title$=abc]{
+      color: darkmagenta;
+    }
+    /* 选择属性值中含有指定值的元素 */
+    p[title*=abc]{
+      color: darkorange;
+    }
+  </style>
+```
+
+
+
+## 10. 伪类选择器
+
+
+
+## 11. 超链接的伪类
+
+
+
+## 12. 伪元素选择器
+

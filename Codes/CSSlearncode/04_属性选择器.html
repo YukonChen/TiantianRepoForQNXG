@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 选择含有指定属性的元素 */
+    h1[title]{
+      color: darkblue;
+    }
+    /* 选择含有指定属性和属性值的元素 */
+    p[title=abc]{
+      color: darkcyan;
+    }
+    /* 选择属性值以指定值开头的元素 */
+    p[title^=abc]{
+      color: darkgoldenrod;
+    }
+    /* 选择属性值以指定值结尾的元素 */
+    p[title$=abc]{
+      color: darkmagenta;
+    }
+    /* 选择属性值中含有指定值的元素 */
+    p[title*=abc]{
+      color: darkorange;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 title="abc">天天YukonChen</h1>
+  <p title="abcdef">少小离家老大回</p>
+  <p title="helloabc">乡音无改鬓毛衰</p>
+  <p title="abc">儿童相见不相识</p>
+  <p>笑问客从何处来</p>
+  <p>落霞与孤鹜齐飞</p>
+  <p>秋水更长天一色</p>
+  <div>贫穷同乐，富贵无言，乐言对不起包子，乐言没一点良心</div>
+  <div>乐宝啤酒，欢乐开拉</div>
+  <div>乐宝啤酒，欢乐开拉</div>
+  <div>乐宝啤酒，欢乐开拉</div>
+  <div>乐宝啤酒，欢乐开拉</div>
+</body>
+
+</html>

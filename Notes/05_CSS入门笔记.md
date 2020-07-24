@@ -185,11 +185,62 @@
 
 ## 10. 伪类选择器
 
+[伪类选择器](../Codes/CSSlearncode/05_伪类选择器.html)
 
+- 伪类哟过来描述一个元素的特殊状态
+  - 比如，第一个子元素，被点击的元素，鼠标移入的元素....
+- 伪类一般情况下都是使用`:`开头
+  - `:first-child`第一个子元素
+  - `:last-child`最后一个子元素
+  - `:nth-child()`选中第n个子元素
+    - 特殊值
+      - n，选中所有
+      - 2n/even，选中所有偶数位
+      - 2n+1/odd，选中所有奇数位
+- 以上伪类都是根据所有的子元素进行排序的
+
+
+
+- 按类型排序的如下
+  - `:first-of-type`第一个子元素
+  - `:last-of-type`最后一个子元素
+  - `:nth-of-type()`选中第n个子元素
+
+
+
+- `:not()`否定伪类
+  - 将符合条件的元素从选择器中去除
 
 ## 11. 超链接的伪类
 
+```html
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    a:link {
+      color: red;
+    }
 
+    a:visited {
+      color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="https://www.baidu.com">访问过的链接</a>
+  <br><br>
+  <a href="https://www.baidu1234.com">没访问过的链接</a>
+</body>
+```
+
+- `:link`用来表示没访问过的链接（正常的链接）
+- `:visited`用来表示访问过的链接
+  - 由于隐私的原因，所以visited这个伪类只能修改链接的颜色
+- `:hover`用来表示鼠标移入的状态
+- `:active`用来表示鼠标点击
 
 ## 12. 伪元素选择器
 

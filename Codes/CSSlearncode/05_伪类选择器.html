@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    ul>div:first-child {
+      color: aqua;
+    }
+    ul>li:first-of-type{
+      color: blue;
+    }
+    ul>li:last-child{
+      color: red;
+    }
+    ul>li:nth-of-type(odd):not(:last-child){
+      color: yellow;
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <div>我是个异类</div>
+    <li>第一个</li>
+    <li>第二个</li>
+    <li>第三个</li>
+    <li>第四个</li>
+    <li>第五个</li>
+  </ul>
+</body>
+
+</html>

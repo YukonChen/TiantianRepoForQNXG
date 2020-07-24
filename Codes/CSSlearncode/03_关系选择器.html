@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 子元素选择器 */
+    div>p {
+      color: blue;
+    }
+
+    div>p>span{
+      color: brown;
+    }
+
+    /* 后代元素选择器 */
+    div span {
+      color: blueviolet;
+    }
+
+    /* 兄弟元素选择器 */
+    p + span{
+      color: chartreuse;
+    }
+    p ~ span{
+      color: darkblue;
+    }
+  </style>
+</head>
+
+<body>
+  <!--
+    父元素
+      直接包含子元素的元素叫做父元素
+    子元素
+      直接被父元素包含的元素是子元素
+    祖先元素
+      直接或间接包含后代元素的元素叫做祖先元素
+      一个元素的父元素也是它的祖先元素
+    后代元素
+      直接或间接被祖先元素包含的元素叫做后代元素
+      子元素也是后代元素
+    兄弟元素
+      拥有相投父元素的元素是兄弟元素
+  -->
+  <div>
+    我是一个div哈哈哈
+    <p>
+      我是div的儿子p
+      <span>我是p的儿子span</span>
+    </p>
+    <span>我是div的儿子span</span>
+    <span>我是div的儿子span</span>
+    <span>我是div的儿子span</span>
+    <span>我是div的儿子span</span>
+    <p>淦</p>
+  </div>
+
+  <div>
+    <span>哈哈哈</span>
+  </div>
+</body>
+
+</html>
